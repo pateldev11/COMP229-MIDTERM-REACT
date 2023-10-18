@@ -7,6 +7,7 @@ const SignUpUser = () => {
   const onSubmit = (data) => {
     if (data.password !== data.confirmPassword) {
       setError('confirmPassword', { type: 'passwordMismatch', message: 'Passwords do not match' });
+      window.alert('Passwords do not match');
     } else {
       // Submit the form data or perform other actions here
       alert('Form submitted successfully');
